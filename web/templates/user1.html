@@ -1,0 +1,53 @@
+{% extends 'company.html' %}
+{% load static %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'web/css/content.css' %}">
+     <link rel="stylesheet" href="{% static 'web/css/login.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% endblock %}
+<style>
+
+</style>
+
+{% block body %}
+
+<div class="container">
+
+    <div class="container">
+
+        <div class="header text-center">
+          <h2> User Documents Deatils</h2>
+        </div>
+        <hr style="height:10px; font-weight:bold; font-size: 12px;">
+
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Username</th>
+        <th scope="col">Documents Upload</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>
+          <a href="#">Poland Shipment.pdf</a>
+      </td>
+        <td><button type="button" class="btn btn-primary btn-md">Edit</button>|<button type="button" class="btn btn-danger btn-md">Delete</button></td>
+      </tr>
+     
+    </tbody>
+  </table>
+  
+
+</div>
+
+{% endblock %}
